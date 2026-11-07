@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warung GAJE · Cita Rasa Elegan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="atas">
+        <div class="wadah header-flex">
+            <a href="#" class="merek">WARUNG <span>GAJE</span></a>
+            <div class="lencana">
+                🛒 <strong id="jumlah-item">0</strong> Menu Ditambahkan
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="wadah">
+            <p class="buka"><span class="titik"></span> Buka Setiap Hari • Fast Response</p>
+            <h1>Sensasi Kuliner Istimewa dalam Setiap Gigitan.</h1>
+            <p>Pilih menu favoritmu, tentukan lokasi pengiriman, dan pesanan akan langsung diproses via WhatsApp!</p>
+            <div class="lokasi-hero">
+                📍 <a href="https://maps.app.goo.gl/Y47sd2WmaFG3AtCW7" target="_blank" rel="noopener">Lihat Lokasi Warung di Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="wadah tata">
+        <section>
+            <h2 class="judul-bagian">Menu Spesial</h2>
+            <div id="daftar-menu" class="grid"></div>
+        </section>
+
+        <aside class="kartu keranjang">
+            <h2>Keranjang Pesanan</h2>
+            <ul id="isi-keranjang"></ul>
+            <p id="keranjang-kosong" class="redup">Belum ada menu yang dipilih.</p>
+            
+            <div class="ringkasan">
+                <p class="total">Total Bayar <strong id="total">Rp0</strong></p>
+            </div>
+
+            <form id="form-pemesanan">
+                <label class="isian">Nama Pemesan
+                    <input type="text" id="nama-pemesan" placeholder="Contoh: Budi Santoso" required>
+                </label>
+                
+                <label class="isian">Metode Pembayaran
+                    <select id="metode-bayar">
+                        <option value="QRIS / E-Wallet (Gopay, OVO, ShopeePay, DANA)">QRIS / E-Wallet (Gopay, OVO, DANA)</option>
+                        <option value="Transfer Bank (BCA / Mandiri / BRI)">Transfer Bank (BCA/Mandiri/BRI)</option>
+                        <option value="Tunai / COD (Bayar di Tempat)">Tunai / COD (Bayar di Tempat)</option>
+                    </select>
+                </label>
+
+                <label class="isian">Alamat Pengiriman / Catatan
+                    <textarea id="alamat" rows="3" placeholder="Masukkan alamat lengkap atau detail meja jika makan di tempat..." required></textarea>
+                </label>
+                
+                <button type="button" id="tombol-pesan" disabled>🚀 Kirim Pesanan via WhatsApp</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="bawah">
+        <div class="wadah footer-flex">
+            <div>
+                <strong>Warung GAJE</strong> &copy; 2026. All rights reserved.
+            </div>
+            <div>
+                📍 <a href="https://maps.app.goo.gl/Y47sd2WmaFG3AtCW7" target="_blank" rel="noopener" class="link-footer">Lokasi Google Maps</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
